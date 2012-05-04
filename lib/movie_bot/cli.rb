@@ -6,7 +6,7 @@ module MovieBot
     def scan
       n = 0
       current_path = Dir.pwd
-      Pathnane(current_path).children.each do |dir|
+      Pathname.new(current_path).children.each do |dir|
         begin
           m = MovieBot::MovieFolder.new(dir.realpath)
           m.imdb

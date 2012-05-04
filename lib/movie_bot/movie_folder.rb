@@ -1,4 +1,5 @@
 require 'imdb'
+require 'pathname'
 
 module MovieBot
   class MovieFolder
