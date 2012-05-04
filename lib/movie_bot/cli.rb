@@ -1,3 +1,4 @@
+require 'movie_bot'
 require 'thor'
 
 module MovieBot
@@ -12,7 +13,7 @@ module MovieBot
           m.imdb
           n = n+1
         rescue Exception => e
-          puts e.message
+          puts e
         end
       end
       puts "Movie found:\t#{n}"

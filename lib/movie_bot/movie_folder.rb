@@ -1,5 +1,4 @@
-require 'imdb'
-require 'pathname'
+require "imdb"
 
 module MovieBot
   class MovieFolder
@@ -18,14 +17,14 @@ module MovieBot
     
     # Return path to all nfo files in the root
     def nfos
-      nfos = @path.glob('*.nfo')
+      nfos = glob('*.nfo')
       raise StandardError, "No NFO found" if nfos.nil?
       return nfos
     end
 
     # Return path to movie.nfo file in the root
     def movie_nfo
-      @path.find('movie.nfo')
+      glob('movie.nfo')
     end
     
     # Retrieve movie information through IMDB object
@@ -34,6 +33,12 @@ module MovieBot
     end
     
     private
+    
+    # Return full path to file matching pattern
+    def glob(pattern)
+      files = Dir.glob(File.join(@path,pattern))
+      files.empty? ? nil : files
+    end
     
     # Read file at given path and deals with encoding
     def readnfo(path)
