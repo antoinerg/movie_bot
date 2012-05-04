@@ -1,4 +1,3 @@
 #!/usr/bin/env ruby
-
 require 'movie_bot/cli'
 MovieBot::CLI.start

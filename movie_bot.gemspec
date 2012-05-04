@@ -10,7 +10,6 @@ Gem::Specification.new do |s|
   s.homepage    = ""
   s.summary     = %q{Opiniated bot to manage movie collections}
   s.description = %q{Helps you renaming,cleaning and normalizing your movie folders}
-  s.executables = %w[movie_bot]
 
   s.rubyforge_project = "movie_bot"
 
@@ -22,5 +21,5 @@ Gem::Specification.new do |s|
   # specify any dependencies here; for example:
   s.add_development_dependency "rspec"
   s.add_runtime_dependency "imdb"
-  s.add_runtime_dependecny "thor"
+  s.add_runtime_dependency "thor"
 end

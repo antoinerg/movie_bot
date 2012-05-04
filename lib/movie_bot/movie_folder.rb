@@ -1,3 +1,5 @@
+require 'imdb'
+
 module MovieBot
   class MovieFolder
     # Initialize object and check whether the folder exist?
