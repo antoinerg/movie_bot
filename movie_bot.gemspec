@@ -10,6 +10,7 @@ Gem::Specification.new do |s|
   s.homepage    = ""
   s.summary     = %q{Opiniated bot to manage movie collections}
   s.description = %q{Helps you renaming,cleaning and normalizing your movie folders}
+  s.executables = %w[movie_bot]
 
   s.rubyforge_project = "movie_bot"
 
