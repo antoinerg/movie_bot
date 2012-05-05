@@ -3,5 +3,6 @@ module MovieBot
     attr_accessor :wrapped_exception
   end
   
-  class IMDBNotFound < Error; end;
+  class ImdbIDNotFound < Error; end;
+  class NfoNotFound < Error; end;
 end

@@ -2,29 +2,41 @@ require "imdb"
 
 module MovieBot
   class MovieFolder
+    attr_reader :video, :path
+    
     # Initialize object and check whether the folder exist?
     def initialize(path)
       raise ArgumentError, 'Folder does not exists' unless Dir.exists?(path)
       @path = Pathname.new(path)
+      
+      @video = MovieBot::VideoFile.find_all(@path)
     end
 
-    # Return the IMDB number by reading from nfo, and then by looking in the db
+    # Return the IMDB number by reading from nfo
     def imdb
       @imdb ||= imdb_from_nfo
-      #raise IMDBNotFound, "IMDB id not found" if @imdb.nil? 
+      raise ImdbIDNotFound, "IMDB id not found" if @imdb.nil? 
       return @imdb
     end
     
-    # Return path to all nfo files in the root
+    # Return pathname object for all nfo files in the root
     def nfos
       nfos = glob('*.nfo')
-      raise StandardError, "No NFO found" if nfos.nil?
+      raise NfoNotFound, "No NFO found" if nfos.nil?
       return nfos
     end
 
-    # Return path to movie.nfo file in the root
+    # Return pathname object for all movie.nfo file in the root
     def movie_nfo
       glob('movie.nfo')
+    end
+    
+    # Return pathname object for all files with basename matching 'sample' (case insensitive)
+    def sample
+      sample = @path.entries.keep_if do |file|
+        file.basename.to_s =~ /sample/i
+      end
+      return sample
     end
     
     # Retrieve movie information through IMDB object
@@ -36,26 +48,26 @@ module MovieBot
     
     # Return full path to file matching pattern
     def glob(pattern)
-      files = Dir.glob(File.join(@path,pattern))
+      files = Pathname.glob(File.join(@path,pattern))
       files.empty? ? nil : files
     end
     
     # Read file at given path and deals with encoding
     def readnfo(path)
       begin
-        File.read(path).encode!('UTF-8','UTF-8',:invalid => :replace)
+        path.read.encode!('UTF-8','UTF-8',:invalid => :replace)
       rescue Exception => e
         puts e.message
       end
     end
     
-    # Try to read IMDB id from nfos
-    # It first looks into movie.nfo and then the rest
-    # id is discarded if there's more than one match in a folder
+    # Read IMDB id from nfos
     def imdb_from_nfo
+      # Ensure we read from movie.nfo first
       [movie_nfo,nfos].flatten.compact.each do |nfo|
-        m=readnfo(nfo).match(/imdb.*(tt\d{7})/).captures
-        return m[0] if m.size == 1 
+        # Look for a unique IMDB link matching tt\d{7}
+        # NOTE - NFO containing more than one IMDB link are discarded (we don't want to guess!) 
+        readnfo(nfo).match(/imdb.*(tt\d{7})/) {|m| return m.captures[0] if m.captures.size == 1}
       end
       # If we get here, no match was found and we have nothing to return
       return nil
