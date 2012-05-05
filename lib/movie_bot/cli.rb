@@ -14,7 +14,9 @@ module MovieBot
           m = MovieBot::MovieFolder.new(dir.realpath)
           puts "IMDB id : #{m.imdb}"
           puts "Sample : #{m.sample}"
-          puts "Video: #{m.video}"
+          info = m.video.first.info
+          puts "Resolution: #{info.video.width}x#{info.video.height}"
+          puts "Overall bitrate: #{info.overall_bit_rate}"
           n = n+1
         rescue Exception => e
           puts "#{e}"
