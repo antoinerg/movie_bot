@@ -11,7 +11,7 @@ module MovieBot
     # Return the IMDB number by reading from nfo, and then by looking in the db
     def imdb
       @imdb ||= imdb_from_nfo
-      raise StandardError, "IMDB id not found" if @imdb.nil? 
+      #raise IMDBNotFound, "IMDB id not found" if @imdb.nil? 
       return @imdb
     end
     

@@ -22,4 +22,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency "rspec"
   s.add_dependency "imdb"
   s.add_dependency "thor"
+  s.add_dependency "mediainfo"
 end

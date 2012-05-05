@@ -10,13 +10,14 @@ module MovieBot
       Pathname.new(current_path).children.each do |dir|
         begin
           m = MovieBot::MovieFolder.new(dir.realpath)
-          m.imdb
+          raise IMDBNotFound if m.imdb.nil?
+          puts "#{dir.basename} : #{m.imdb}"
           n = n+1
         rescue Exception => e
-          puts e
+          #puts e
         end
       end
-      puts "Movie found:\t#{n}"
+      puts "------\nCleaned movie folder found:\t#{n}"
     end
   end
 end
