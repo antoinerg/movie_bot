@@ -15,14 +15,14 @@ module MovieBot
     # Return the IMDB number by reading from nfo
     def imdb
       @imdb ||= imdb_from_nfo
-      raise ImdbIDNotFound, "IMDB id not found" if @imdb.nil? 
+      raise ImdbIDNotFound if @imdb.nil? 
       return @imdb
     end
     
     # Return pathname object for all nfo files in the root
     def nfos
       nfos = glob('*.nfo')
-      raise NfoNotFound, "No NFO found" if nfos.nil?
+      raise NfoNotFound if nfos.nil?
       return nfos
     end
 

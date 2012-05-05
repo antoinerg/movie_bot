@@ -14,9 +14,10 @@ module MovieBot
           m = MovieBot::MovieFolder.new(dir.realpath)
           puts "IMDB id : #{m.imdb}"
           puts "Sample : #{m.sample}"
+          puts "Video: #{m.video}"
           n = n+1
         rescue Exception => e
-          puts "#{dir.basename} : #{e}"
+          puts "#{e}"
         end
         puts "\n"
       end
