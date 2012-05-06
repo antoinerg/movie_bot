@@ -6,4 +6,5 @@ module MovieBot
   class ImdbIDNotFound < Error; end;
   class NfoNotFound < Error; end;
   class VideoNotFound < Error; end;
+  class BadFolderStructure < Error; end;
 end

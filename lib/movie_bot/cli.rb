@@ -4,7 +4,7 @@ require 'thor'
 module MovieBot
   class CLI < Thor
     desc "scan", "Scan current folder"
-    def scan
+    def scan(path='.')
       n = 0
       current_path = Dir.pwd
       Pathname.new(current_path).children.each do |dir|
@@ -19,7 +19,7 @@ module MovieBot
           puts "Overall bitrate: #{info.overall_bit_rate}"
           n = n+1
         rescue Exception => e
-          puts "#{e}"
+          puts e
         end
         puts "\n"
       end
