@@ -1,4 +1,4 @@
-path = "./spec/fixtures/movies/with_video_ts"
+path = "./spec/fixtures/movies/with_nested_video_ts"
 describe MovieBot::MovieFolder do
   include MovieBot
   

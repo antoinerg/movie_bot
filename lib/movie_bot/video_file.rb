@@ -15,7 +15,7 @@ module MovieBot
         # Look for file with right extension
         VIDEO_EXT.include?(entry.extname) ||
         # Look for a folder named VIDEO_TS
-        self.is_dvd_folder?(entry)
+        is_dvd_folder?(entry)
       end 
       raise VideoNotFound if video.empty?
       return video.collect {|v| VideoFile.new(v) }
@@ -26,20 +26,38 @@ module MovieBot
     end
     
     def info
-      @info ||= Mediainfo.new(@path.realpath)
+      if is_dvd_image?
+        # Open the image and read info
+      elsif is_dvd_folder?
+        # Go read the right file in the folder
+      else
+        # Just read the file directly
+        @info ||= Mediainfo.new(@path.realpath)
+      end
+      return @info
     end
     
     def dvd?
       # If its an iso
-      @path.extname == '.iso' || 
+      self.class.is_dvd_image?(@path) || 
       # If its a VIDEO_TS folder
-      self.is_dvd_folder?(@path)
+      self.class.is_dvd_folder?(@path)
     end
-    
-    private
-    
+        
     def self.is_dvd_folder?(entry)
       (entry.basename.to_s == 'VIDEO_TS' && entry.directory?)
+    end
+    
+    def is_dvd_folder?
+      self.class.is_dvd_folder?(@path)
+    end
+    
+    def self.is_dvd_image?(entry)
+      entry.extname == '.iso'
+    end
+    
+    def is_dvd_image?
+      self.class.is_dvd_folder?(@path)
     end
   end
 end

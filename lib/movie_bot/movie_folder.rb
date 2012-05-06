@@ -2,27 +2,32 @@ require "imdb"
 
 module MovieBot
   class MovieFolder
-    attr_reader :video, :path
+    attr_reader :video_files, :path, :movie_files
     
     # Initialize object and check whether the folder exist?
     def initialize(path)
       raise ArgumentError, 'Folder does not exists' unless Dir.exists?(path)
       @path = Pathname.new(path)
       
-      @video = MovieBot::VideoFile.find_all(@path)
+      @video_files = MovieBot::VideoFile.find_all(@path) # Raise error if emtpy
+      @movie_files = @video_files - sample_files
+    end
+    
+    def normalized?
+      raise BadFolderStructure, 'Contains subdirectories' if directories.count >= 1  
+      raise NfoNotFound if nfos.nil?
+      raise ImdbIDNotFound if @imdb.nil?     
     end
 
     # Return the IMDB number by reading from nfo
     def imdb
       @imdb ||= imdb_from_nfo
-      raise ImdbIDNotFound if @imdb.nil? 
       return @imdb
     end
     
     # Return pathname object for all nfo files in the root
     def nfos
       nfos = glob('*.nfo')
-      raise NfoNotFound if nfos.nil?
       return nfos
     end
 
@@ -32,9 +37,9 @@ module MovieBot
     end
     
     # Return pathname object for all files with basename matching 'sample' (case insensitive)
-    def sample
-      sample = @path.entries.keep_if do |file|
-        file.basename.to_s =~ /sample/i
+    def sample_files
+      sample = video_files.entries.keep_if do |video|
+        video.path.basename.to_s =~ /sample/i
       end
       return sample
     end
@@ -42,6 +47,13 @@ module MovieBot
     # Retrieve movie information through IMDB object
     def imdb_info
       @imdb_info ||= Imdb::Movie.new(self.imdb.gsub('tt',''))
+    end
+    
+    # Return pathname object for all first-level directories
+    def directories 
+      dir=@path.children.keep_if do |entry|
+        entry.directory?
+      end
     end
     
     private

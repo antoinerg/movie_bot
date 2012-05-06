@@ -6,8 +6,7 @@ module MovieBot
     desc "scan", "Scan current folder"
     def scan(path='.')
       n = 0
-      current_path = Dir.pwd
-      Pathname.new(current_path).children.each do |dir|
+      Pathname.new(path).children.each do |dir|
         puts "#{dir.basename}\n"
         puts "--------"
         begin
