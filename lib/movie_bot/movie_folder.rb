@@ -13,12 +13,6 @@ module MovieBot
       @movie_files = @video_files - sample_files
     end
     
-    def normalized?
-      raise BadFolderStructure, 'Contains subdirectories' if directories.count >= 1  
-      raise NfoNotFound if nfos.nil?
-      raise ImdbIDNotFound if @imdb.nil?     
-    end
-
     # Return the IMDB number by reading from nfo
     def imdb
       @imdb ||= imdb_from_nfo
@@ -47,6 +41,13 @@ module MovieBot
     # Retrieve movie information through IMDB object
     def imdb_info
       @imdb_info ||= Imdb::Movie.new(self.imdb.gsub('tt',''))
+    end
+    
+    # Return normalized name
+    def name
+      title = @imdb_info.title
+      year = @imdb_info.year
+      "#{title} (#{year})"
     end
     
     # Return pathname object for all first-level directories

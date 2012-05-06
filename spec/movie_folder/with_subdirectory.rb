@@ -12,7 +12,4 @@ describe MovieBot::MovieFolder do
     @movie.directories.first.basename.to_s.should eq ("covers")
   end
   
-  it "should raise an error if it contains subdirectory when normalized?" do
-    lambda {@movie.normalized?}.should raise_error(BadFolderStructure)
-  end
 end

@@ -12,8 +12,9 @@ module MovieBot
         begin
           m = MovieBot::MovieFolder.new(dir.realpath)
           puts "IMDB id : #{m.imdb}"
-          puts "Sample : #{m.sample}"
-          info = m.video.first.info
+          puts "Sample files: #{m.sample_files}"
+          puts "Movie files: #{m.movie_files}"
+          info = m.movie_files.first.info
           puts "Resolution: #{info.video.width}x#{info.video.height}"
           puts "Overall bitrate: #{info.overall_bit_rate}"
           n = n+1

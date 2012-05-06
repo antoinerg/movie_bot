@@ -11,10 +11,10 @@ describe MovieBot::MovieFolder do
     @movie.video_files.collect{|f| f.path.basename.to_s}.should =~ @movie_files
   end
   
-  it "should raise an error when normalized?" do
-    lambda {@movie.normalized?}.should raise_error(NfoNotFound)
+  it "should not return any nfos" do
+    @movie.nfos.should eq(nil)
   end
-  
+
   it "should not return an imdb id" do
     @movie.imdb.should eq(nil)
   end
