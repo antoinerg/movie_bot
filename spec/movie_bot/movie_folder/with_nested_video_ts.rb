@@ -1,9 +1,7 @@
 path = "./spec/fixtures/movies/with_nested_video_ts"
 describe MovieBot::MovieFolder do
-  include MovieBot
-  
   before(:all) do
-    @movie = MovieFolder.new(path)
+    @movie = MovieBot::MovieFolder.new(path)
     @movie_files = %w{VIDEO_TS}
   end
   
