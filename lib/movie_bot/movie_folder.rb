@@ -1,5 +1,3 @@
-require "imdb"
-
 module MovieBot
   class MovieFolder
     attr_reader :video_files, :path, :movie_files
@@ -40,16 +38,9 @@ module MovieBot
     
     # Retrieve movie information through IMDB object
     def imdb_info
-      @imdb_info ||= Imdb::Movie.new(self.imdb.gsub('tt',''))
+      @imdb_info ||= Imdb::Movie.new(imdb.gsub('tt',''))
     end
-    
-    # Return normalized name
-    def name
-      title = @imdb_info.title
-      year = @imdb_info.year
-      "#{title} (#{year})"
-    end
-    
+        
     # Return pathname object for all first-level directories
     def directories 
       dir=@path.children.keep_if do |entry|

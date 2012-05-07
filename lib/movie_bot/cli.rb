@@ -3,6 +3,11 @@ require 'thor'
 
 module MovieBot
   class CLI < Thor
+    desc "clean", "Clean movie folder"
+    def clean(path)
+      MovieBot::Cleaner.new(path)      
+    end
+    
     desc "scan", "Scan current folder"
     def scan(path='.')
       n = 0
