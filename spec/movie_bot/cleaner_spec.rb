@@ -1,12 +1,17 @@
 require 'spec_helper'
 path = File.join(File.dirname(__FILE__),"fixtures/movies/clean")
+destination = '/tmp'
 
 describe MovieBot::Cleaner do
-  include FakeFS::SpecHelpers
   include MovieBot
   
-  before(:all) do
-    @cleaner = Cleaner.new(path)
+  before(:each) do
+    Fileutils.cp_r path, destination
+    @cleaner = Cleaner.new(File.join(destination,'clean'))
+  end
+
+  after(:each) do
+    Fileutils.rm_r path
   end
 
   it "should return a imdb" do

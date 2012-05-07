@@ -1,15 +1,15 @@
-path = "./spec/fixtures/movies/clean"
+path = "spec/fixtures/movies/clean"
+
 describe MovieBot::MovieFolder do
-  include MovieBot
   
   before(:all) do
-    @movie = MovieFolder.new(path)
+    @movie = MovieBot::MovieFolder.new(path)
     @sample_files = []
     @movie_files = %w{annie.hall.bluray.1977.mkv}
   end
   
   it "should point to an existing folder" do
-    lambda {MovieFolder.new("not_existing")}.should raise_error(ArgumentError)
+    lambda {MovieBot::MovieFolder.new("not_existing")}.should raise_error(ArgumentError)
   end
 
   it "should return nfos" do

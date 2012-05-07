@@ -1,11 +1,11 @@
 HTTP/1.0 200 OK
-Date: Sun, 06 May 2012 23:33:42 GMT
+Date: Mon, 07 May 2012 14:20:24 GMT
 Server: Server
 Cache-Control: private
 Cneonction: close
 Content-Type: text/html
-Set-Cookie: uu=BCYuvGPnVqVEVwCH6CAz43M21DowmOWHgyLwK3sBxHaxzGdYsqpPGtz48z3yQSH38xaYO4csV07NYjgvo6Z4WLswijfjVdagb3e3-VOMH5n0IywniMBpeo_PRRY4zfG7AcaR15p3_RL_zPeq1Zj_LMZURWnWk3xd893PPfHdkWHBnAA;expires=Thu, 30 Dec 2037 00:00:00 GMT;path=/;domain=.imdb.com
-Set-Cookie: cs=knNV35kAKu2Du3UdeFRqoQnJEiSO2SUS3lFyJI36Mqyd6lFXrcohF+7ZIoQumTIkju9VcgrJEiSLX+bwfd1nc7mZsocO2SSyblESJI7vJDOO2RIkjvkSJI7ZEmTOiWIUg=;expires=Mon, 07 May 2012 07:00:00 GMT;path=/;domain=.imdb.com
+Set-Cookie: uu=BCYqRiIkpwhaXql8VkojKxzI8o7pDmndx3uwZRPS0pvadgnIluIMOuQ7fMHPcdnxI5fsWjf0JocY3Iz1VSv7qP1HnMDqJSbEioK0H8F67Vd4-k1Fsdme_i2IwhIlqCPDCEzAb0rlyrmu6GEXButzHRn8ttJUlsOnMnBb0sQ5ckpsB6g;expires=Thu, 30 Dec 2037 00:00:00 GMT;path=/;domain=.imdb.com
+Set-Cookie: cs=LjRKC5HVN23TyUYxp+/HrAeBbbqgkVqM8BkNuqOyLTKz0m6544JeicCRXRoA0U26oKcq7COhbbqj5zvdJ9HN2TCRWyxAGW26oKdbraCRbbqgsW26oJFt+uDBHYqg==;expires=Tue, 08 May 2012 07:00:00 GMT;path=/;domain=.imdb.com
 Vary: Accept-Encoding,User-Agent
 P3P: policyref="http://i.imdb.com/images/p3p.xml",CP="CAO DSP LAW CUR ADM IVAo IVDo CONo OTPo OUR DELi PUBi OTRi BUS PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA HEA PRE LOC GOV OTC "
 X-Cache: MISS from pfsense.home
@@ -22,7 +22,7 @@ Connection: close
 <script type="text/javascript">var IMDbTimer={starttime: new Date().getTime()};</script>
 <script>
 var addClickstreamHeadersToAjax = function(xhr) {
-    xhr.setRequestHeader("x-imdb-parent-id", "0ZMCSCSQ9XJ9Z7YA0Y5Z");
+    xhr.setRequestHeader("x-imdb-parent-id", "1GJ15XR4060P8W5GBCJZ");
 };
 </script>
 
@@ -50,7 +50,7 @@ var addClickstreamHeadersToAjax = function(xhr) {
       href="http://i.media-imdb.com/images/SFc8a0bc1039862e1386365008f0507ea9/apple-touch-icon.png" />
 <link rel="search" type="application/opensearchdescription+xml"
       href="http://i.media-imdb.com/images/SF1c05d2599bfc9132fc0ec9b4f6ae1e74/imdbsearch.xml" title="IMDb" />
-<script type="text/javascript">var __vkey = 'MgnTuUHDSALIt0yqnK1FGAB%2FqjlzCVo5cxoJWvcuGTpwfhqZ40laOXMqKRpTWmlaRzn6mmBpWjlgaVoJIDkqCX';var __vrtg = '8.2';</script>
+<script type="text/javascript">var __vkey = 'kSCRIU7Xkbd4fTctAIHVGAB%2FqjlzCVo5cxoJWvcuGTpwfhqZ4ylaOXNqWXpTWmlaNzn6mmBpWjlgaVoJIDkqCX';var __vrtg = '8.2';</script>
 <meta property="og:type" content="movie" />
 <meta property="fb:app_id" content="115109575169727" />
 <meta property="og:title" content="Annie Hall (1977)" />
@@ -63,8 +63,8 @@ generic.monitoring.set_forester_info("title");
 generic.monitoring.set_twilight_info(
     "title", 
     "Other", 
-    "e8a3883f0fb725586edf29d65b9b031b767db7a3", 
-    "2012-05-06T23%3A33%3A42GMT", 
+    "ef159e532d8c00085806a0b524f1dfc5c6e9a3b5", 
+    "2012-05-07T14%3A20%3A24GMT", 
     "http://s.media-imdb.com/twilight/?");
 
 generic.monitoring.start_timing("page_load");
@@ -118,7 +118,7 @@ ad_utils.queue_ad('2','top_ad');
 </script>
 <iframe src="/images/SF99c7f777fc74f1d954417f99b985a4af/a/ifb/doubleclick/expand.html#imdb2.consumer.title/combined;tile=2;sz=728x90,1008x150,1008x200,1008x30,9x1;p=t;p=top;ct=com;id=tt0075686;g=co;tt=f;b=t250;g=brc;g=dr;b=31dom;g=ro;k=c;coo=usa;;[PASEGMENTS];u=[CLIENT_SIDE_ORD];ord=[CLIENT_SIDE_ORD]?" id="top_ad" name="top_ad" class="yesScript" width="0" height="85" data-config-width="0" data-config-height="85" data-cookie-width="null" data-cookie-height="null" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" allowtransparency="true" onload="ad_utils.on_ad_load(this)"></iframe>
 
-<noscript><a href="http://ad.doubleclick.net/jump/imdb2.consumer.title/combined;tile=2;sz=728x90,1008x150,1008x200,1008x30,9x1;p=t;p=top;ct=com;id=tt0075686;g=co;tt=f;b=t250;g=brc;g=dr;b=31dom;g=ro;k=c;coo=usa;;ord=317280649281?" target="_blank"><img src="http://ad.doubleclick.net/ad/imdb2.consumer.title/combined;tile=2;sz=728x90,1008x150,1008x200,1008x30,9x1;p=t;p=top;ct=com;id=tt0075686;g=co;tt=f;b=t250;g=brc;g=dr;b=31dom;g=ro;k=c;coo=usa;;ord=317280649281?"  border="0" alt="advertisement" /></a></noscript>
+<noscript><a href="http://ad.doubleclick.net/jump/imdb2.consumer.title/combined;tile=2;sz=728x90,1008x150,1008x200,1008x30,9x1;p=t;p=top;ct=com;id=tt0075686;g=co;tt=f;b=t250;g=brc;g=dr;b=31dom;g=ro;k=c;coo=usa;;ord=82179677281?" target="_blank"><img src="http://ad.doubleclick.net/ad/imdb2.consumer.title/combined;tile=2;sz=728x90,1008x150,1008x200,1008x30,9x1;p=t;p=top;ct=com;id=tt0075686;g=co;tt=f;b=t250;g=brc;g=dr;b=31dom;g=ro;k=c;coo=usa;;ord=82179677281?"  border="0" alt="advertisement" /></a></noscript>
 
 </div>
 <div id="top_ad_reflow_helper"></div>
@@ -463,7 +463,7 @@ ad_utils.queue_ad('5','upfront_navstrip');
 </script>
 <iframe src="/images/SF99c7f777fc74f1d954417f99b985a4af/a/ifb/doubleclick/expand.html#imdb2.consumer.title/combined;tile=5;sz=1008x60,1008x66,7x1;p=ns;ct=com;id=tt0075686;g=co;tt=f;b=t250;g=brc;g=dr;b=31dom;g=ro;k=c;coo=usa;;[PASEGMENTS];u=[CLIENT_SIDE_ORD];ord=[CLIENT_SIDE_ORD]?" id="upfront_navstrip" name="upfront_navstrip" class="yesScript" width="0" height="0" data-config-width="0" data-config-height="0" data-cookie-width="null" data-cookie-height="null" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" allowtransparency="true" onload="ad_utils.on_ad_load(this)"></iframe>
 
-<noscript><a href="http://ad.doubleclick.net/jump/imdb2.consumer.title/combined;tile=5;sz=1008x60,1008x66,7x1;p=ns;ct=com;id=tt0075686;g=co;tt=f;b=t250;g=brc;g=dr;b=31dom;g=ro;k=c;coo=usa;;ord=317280649281?" target="_blank"><img src="http://ad.doubleclick.net/ad/imdb2.consumer.title/combined;tile=5;sz=1008x60,1008x66,7x1;p=ns;ct=com;id=tt0075686;g=co;tt=f;b=t250;g=brc;g=dr;b=31dom;g=ro;k=c;coo=usa;;ord=317280649281?"  border="0" alt="advertisement" /></a></noscript>
+<noscript><a href="http://ad.doubleclick.net/jump/imdb2.consumer.title/combined;tile=5;sz=1008x60,1008x66,7x1;p=ns;ct=com;id=tt0075686;g=co;tt=f;b=t250;g=brc;g=dr;b=31dom;g=ro;k=c;coo=usa;;ord=82179677281?" target="_blank"><img src="http://ad.doubleclick.net/ad/imdb2.consumer.title/combined;tile=5;sz=1008x60,1008x66,7x1;p=ns;ct=com;id=tt0075686;g=co;tt=f;b=t250;g=brc;g=dr;b=31dom;g=ro;k=c;coo=usa;;ord=82179677281?"  border="0" alt="advertisement" /></a></noscript>
 
 </div>
 <div id="upfront_navstrip_reflow_helper"></div>
@@ -585,7 +585,7 @@ ad_utils.queue_ad('5','upfront_navstrip');
 
 <td width="40%" class="media_strip_header">
 <b>Photos</b>
-<span>(<a href="/rg/photos-title/gallery-link/title/tt0075686/mediaindex">See all 40</a> | <a href="/rg/photos-title/slideshow-link/media/rm4097751296/tt0075686?slideshow=1">slideshow</a>)</span>
+<span>(<a href="/rg/photos-title/gallery-link/title/tt0075686/mediaindex">See all 40</a> | <a href="/rg/photos-title/slideshow-link/media/rm3415901952/tt0075686?slideshow=1">slideshow</a>)</span>
 </td>
 
 <td width="40%" class="media_strip_header">
@@ -601,14 +601,14 @@ ad_utils.queue_ad('5','upfront_navstrip');
 
 <td>
 <div class="media_strip_thumbs">
-<div class="media_strip_thumb"><a href="/rg/photos-title/still_frame-1/media/rm4097751296/tt0075686"><img height="90" width="90" src="http://ia.media-imdb.com/images/M/MV5BMTMzNTg3MTg1MF5BMl5BanBnXkFtZTcwMzMxMTkzNQ@@._V1._CR341,0,1366,1366_SS90_.jpg" border="0"></a></div>
-<div class="media_strip_thumb"><a href="/rg/photos-title/still_frame-2/media/rm3399124736/tt0075686"><img height="90" width="90" src="http://ia.media-imdb.com/images/M/MV5BMTU5MDEyNjIyMF5BMl5BanBnXkFtZTcwNDU3OTYwNA@@._V1._CR0,0,690,690_SS90_.jpg" border="0"></a></div>
-<div class="media_strip_thumb"><a href="/rg/photos-title/still_frame-3/media/rm3432679168/tt0075686"><img height="90" width="90" src="http://ia.media-imdb.com/images/M/MV5BMTMwMzU2MTI1N15BMl5BanBnXkFtZTcwMjU3OTYwNA@@._V1._CR0,0,688,688_SS90_.jpg" border="0"></a></div>
+<div class="media_strip_thumb"><a href="/rg/photos-title/still_frame-1/media/rm3415901952/tt0075686"><img height="90" width="90" src="http://ia.media-imdb.com/images/M/MV5BMTY1NjQzMzczMV5BMl5BanBnXkFtZTcwMzU3OTYwNA@@._V1._CR166,0,690,690_SS90_.jpg" border="0"></a></div>
+<div class="media_strip_thumb"><a href="/rg/photos-title/still_frame-2/media/rm4097751296/tt0075686"><img height="90" width="90" src="http://ia.media-imdb.com/images/M/MV5BMTMzNTg3MTg1MF5BMl5BanBnXkFtZTcwMzMxMTkzNQ@@._V1._CR341,0,1366,1366_SS90_.jpg" border="0"></a></div>
+<div class="media_strip_thumb"><a href="/rg/photos-title/still_frame-3/media/rm3617228544/tt0075686"><img height="90" width="90" src="http://ia.media-imdb.com/images/M/MV5BODE1ODg1MTczNV5BMl5BanBnXkFtZTcwNzU3OTYwNA@@._V1._CR169,0,684,684_SS90_.jpg" border="0"></a></div>
 <div class="media_strip_thumb"><a href="/rg/photos-title/still_frame-4/media/rm3449456384/tt0075686"><img height="90" width="90" src="http://ia.media-imdb.com/images/M/MV5BOTAyNTYwMjQ2M15BMl5BanBnXkFtZTcwMTU3OTYwNA@@._V1._CR0,0,677,677_SS90_.jpg" border="0"></a></div>
-<div class="media_strip_thumb"><a href="/rg/photos-title/still_frame-5/media/rm3365570304/tt0075686"><img height="90" width="90" src="http://ia.media-imdb.com/images/M/MV5BMTczMzcxNDUyM15BMl5BanBnXkFtZTcwNjU3OTYwNA@@._V1._CR161,0,701,701_SS90_.jpg" border="0"></a></div>
-<div class="media_strip_thumb"><a href="/rg/photos-title/still_frame-6/media/rm3415901952/tt0075686"><img height="90" width="90" src="http://ia.media-imdb.com/images/M/MV5BMTY1NjQzMzczMV5BMl5BanBnXkFtZTcwMzU3OTYwNA@@._V1._CR166,0,690,690_SS90_.jpg" border="0"></a></div>
-<div class="media_strip_thumb"><a href="/rg/photos-title/still_frame-7/media/rm3617228544/tt0075686"><img height="90" width="90" src="http://ia.media-imdb.com/images/M/MV5BODE1ODg1MTczNV5BMl5BanBnXkFtZTcwNzU3OTYwNA@@._V1._CR169,0,684,684_SS90_.jpg" border="0"></a></div>
-<div class="media_strip_thumb"><a href="/rg/photos-title/still_frame-8/media/rm3382347520/tt0075686"><img height="90" width="90" src="http://ia.media-imdb.com/images/M/MV5BMTg5NjAwMTQ5MV5BMl5BanBnXkFtZTcwNTU3OTYwNA@@._V1._CR167,0,688,688_SS90_.jpg" border="0"></a></div>
+<div class="media_strip_thumb"><a href="/rg/photos-title/still_frame-5/media/rm3432679168/tt0075686"><img height="90" width="90" src="http://ia.media-imdb.com/images/M/MV5BMTMwMzU2MTI1N15BMl5BanBnXkFtZTcwMjU3OTYwNA@@._V1._CR0,0,688,688_SS90_.jpg" border="0"></a></div>
+<div class="media_strip_thumb"><a href="/rg/photos-title/still_frame-6/media/rm3382347520/tt0075686"><img height="90" width="90" src="http://ia.media-imdb.com/images/M/MV5BMTg5NjAwMTQ5MV5BMl5BanBnXkFtZTcwNTU3OTYwNA@@._V1._CR167,0,688,688_SS90_.jpg" border="0"></a></div>
+<div class="media_strip_thumb"><a href="/rg/photos-title/still_frame-7/media/rm3365570304/tt0075686"><img height="90" width="90" src="http://ia.media-imdb.com/images/M/MV5BMTczMzcxNDUyM15BMl5BanBnXkFtZTcwNjU3OTYwNA@@._V1._CR161,0,701,701_SS90_.jpg" border="0"></a></div>
+<div class="media_strip_thumb"><a href="/rg/photos-title/still_frame-8/media/rm3399124736/tt0075686"><img height="90" width="90" src="http://ia.media-imdb.com/images/M/MV5BMTU5MDEyNjIyMF5BMl5BanBnXkFtZTcwNDU3OTYwNA@@._V1._CR0,0,690,690_SS90_.jpg" border="0"></a></div>
 <div class="media_strip_thumb"><a href="/rg/photos-title/still_frame-9/media/rm1510249984/tt0075686"><img height="90" width="90" src="http://ia.media-imdb.com/images/M/MV5BMTMyMDE4NTA3MV5BMl5BanBnXkFtZTcwMTk5MDk2MQ@@._V1._CR79,0,327,327_SS90_.jpg" border="0"></a></div>
 <div class="media_strip_thumb"><a href="/rg/photos-title/still_frame-10/media/rm1527027200/tt0075686"><img height="90" width="90" src="http://ia.media-imdb.com/images/M/MV5BMTA1NjAyMDEyMjNeQTJeQWpwZ15BbWU3MDA5OTA5NjE@._V1._CR48,0,389,389_SS90_.jpg" border="0"></a></div>
 </div>
@@ -656,7 +656,7 @@ ad_utils.queue_ad('3','top_rhs');
 </script>
 <iframe src="/images/SF99c7f777fc74f1d954417f99b985a4af/a/ifb/doubleclick/expand.html#imdb2.consumer.title/combined;tile=3;sz=300x250,300x600,11x1;p=tr;p=tc;ct=com;id=tt0075686;g=co;tt=f;b=t250;g=brc;g=dr;b=31dom;g=ro;k=c;coo=usa;;[PASEGMENTS];u=[CLIENT_SIDE_ORD];ord=[CLIENT_SIDE_ORD]?" id="top_rhs" name="top_rhs" class="yesScript" width="300" height="250" data-config-width="300" data-config-height="250" data-cookie-width="null" data-cookie-height="null" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" allowtransparency="true" onload="ad_utils.on_ad_load(this)"></iframe>
 
-<noscript><a href="http://ad.doubleclick.net/jump/imdb2.consumer.title/combined;tile=3;sz=300x250,300x600,11x1;p=tr;p=tc;ct=com;id=tt0075686;g=co;tt=f;b=t250;g=brc;g=dr;b=31dom;g=ro;k=c;coo=usa;;ord=317280649281?" target="_blank"><img src="http://ad.doubleclick.net/ad/imdb2.consumer.title/combined;tile=3;sz=300x250,300x600,11x1;p=tr;p=tc;ct=com;id=tt0075686;g=co;tt=f;b=t250;g=brc;g=dr;b=31dom;g=ro;k=c;coo=usa;;ord=317280649281?"  border="0" alt="advertisement" /></a></noscript>
+<noscript><a href="http://ad.doubleclick.net/jump/imdb2.consumer.title/combined;tile=3;sz=300x250,300x600,11x1;p=tr;p=tc;ct=com;id=tt0075686;g=co;tt=f;b=t250;g=brc;g=dr;b=31dom;g=ro;k=c;coo=usa;;ord=82179677281?" target="_blank"><img src="http://ad.doubleclick.net/ad/imdb2.consumer.title/combined;tile=3;sz=300x250,300x600,11x1;p=tr;p=tc;ct=com;id=tt0075686;g=co;tt=f;b=t250;g=brc;g=dr;b=31dom;g=ro;k=c;coo=usa;;ord=82179677281?"  border="0" alt="advertisement" /></a></noscript>
 
 </div>
 <div id="top_rhs_reflow_helper"></div>
@@ -694,7 +694,7 @@ ad_utils.queue_ad('3','top_rhs');
         <div class="outer">
           <div id="general-voting-stars" class="inner" style="width: 164px"></div>
           <div class="starbar-votes">
-            <a title="10" href="vote?v=10;k=MgnTuUHDSALIt0yqnK1FGAB%2FqjlzCVo5cxoJWvcuGTpwfhqZ40laOXMqKRpTWmlaRzn6mmBpWjlgaVoJIDkqCX" onclick="return vote(10)" class="s10"></a><a title="9" href="vote?v=9;k=MgnTuUHDSALIt0yqnK1FGAB%2FqjlzCVo5cxoJWvcuGTpwfhqZ40laOXMqKRpTWmlaRzn6mmBpWjlgaVoJIDkqCX" onclick="return vote(9)" class="s9"></a><a title="8" href="vote?v=8;k=MgnTuUHDSALIt0yqnK1FGAB%2FqjlzCVo5cxoJWvcuGTpwfhqZ40laOXMqKRpTWmlaRzn6mmBpWjlgaVoJIDkqCX" onclick="return vote(8)" class="s8"></a><a title="7" href="vote?v=7;k=MgnTuUHDSALIt0yqnK1FGAB%2FqjlzCVo5cxoJWvcuGTpwfhqZ40laOXMqKRpTWmlaRzn6mmBpWjlgaVoJIDkqCX" onclick="return vote(7)" class="s7"></a><a title="6" href="vote?v=6;k=MgnTuUHDSALIt0yqnK1FGAB%2FqjlzCVo5cxoJWvcuGTpwfhqZ40laOXMqKRpTWmlaRzn6mmBpWjlgaVoJIDkqCX" onclick="return vote(6)" class="s6"></a><a title="5" href="vote?v=5;k=MgnTuUHDSALIt0yqnK1FGAB%2FqjlzCVo5cxoJWvcuGTpwfhqZ40laOXMqKRpTWmlaRzn6mmBpWjlgaVoJIDkqCX" onclick="return vote(5)" class="s5"></a><a title="4" href="vote?v=4;k=MgnTuUHDSALIt0yqnK1FGAB%2FqjlzCVo5cxoJWvcuGTpwfhqZ40laOXMqKRpTWmlaRzn6mmBpWjlgaVoJIDkqCX" onclick="return vote(4)" class="s4"></a><a title="3" href="vote?v=3;k=MgnTuUHDSALIt0yqnK1FGAB%2FqjlzCVo5cxoJWvcuGTpwfhqZ40laOXMqKRpTWmlaRzn6mmBpWjlgaVoJIDkqCX" onclick="return vote(3)" class="s3"></a><a title="2" href="vote?v=2;k=MgnTuUHDSALIt0yqnK1FGAB%2FqjlzCVo5cxoJWvcuGTpwfhqZ40laOXMqKRpTWmlaRzn6mmBpWjlgaVoJIDkqCX" onclick="return vote(2)" class="s2"></a><a title="1" href="vote?v=1;k=MgnTuUHDSALIt0yqnK1FGAB%2FqjlzCVo5cxoJWvcuGTpwfhqZ40laOXMqKRpTWmlaRzn6mmBpWjlgaVoJIDkqCX" onclick="return vote(1)" class="s1"></a>
+            <a title="10" href="vote?v=10;k=kSCRIU7Xkbd4fTctAIHVGAB%2FqjlzCVo5cxoJWvcuGTpwfhqZ4ylaOXNqWXpTWmlaNzn6mmBpWjlgaVoJIDkqCX" onclick="return vote(10)" class="s10"></a><a title="9" href="vote?v=9;k=kSCRIU7Xkbd4fTctAIHVGAB%2FqjlzCVo5cxoJWvcuGTpwfhqZ4ylaOXNqWXpTWmlaNzn6mmBpWjlgaVoJIDkqCX" onclick="return vote(9)" class="s9"></a><a title="8" href="vote?v=8;k=kSCRIU7Xkbd4fTctAIHVGAB%2FqjlzCVo5cxoJWvcuGTpwfhqZ4ylaOXNqWXpTWmlaNzn6mmBpWjlgaVoJIDkqCX" onclick="return vote(8)" class="s8"></a><a title="7" href="vote?v=7;k=kSCRIU7Xkbd4fTctAIHVGAB%2FqjlzCVo5cxoJWvcuGTpwfhqZ4ylaOXNqWXpTWmlaNzn6mmBpWjlgaVoJIDkqCX" onclick="return vote(7)" class="s7"></a><a title="6" href="vote?v=6;k=kSCRIU7Xkbd4fTctAIHVGAB%2FqjlzCVo5cxoJWvcuGTpwfhqZ4ylaOXNqWXpTWmlaNzn6mmBpWjlgaVoJIDkqCX" onclick="return vote(6)" class="s6"></a><a title="5" href="vote?v=5;k=kSCRIU7Xkbd4fTctAIHVGAB%2FqjlzCVo5cxoJWvcuGTpwfhqZ4ylaOXNqWXpTWmlaNzn6mmBpWjlgaVoJIDkqCX" onclick="return vote(5)" class="s5"></a><a title="4" href="vote?v=4;k=kSCRIU7Xkbd4fTctAIHVGAB%2FqjlzCVo5cxoJWvcuGTpwfhqZ4ylaOXNqWXpTWmlaNzn6mmBpWjlgaVoJIDkqCX" onclick="return vote(4)" class="s4"></a><a title="3" href="vote?v=3;k=kSCRIU7Xkbd4fTctAIHVGAB%2FqjlzCVo5cxoJWvcuGTpwfhqZ4ylaOXNqWXpTWmlaNzn6mmBpWjlgaVoJIDkqCX" onclick="return vote(3)" class="s3"></a><a title="2" href="vote?v=2;k=kSCRIU7Xkbd4fTctAIHVGAB%2FqjlzCVo5cxoJWvcuGTpwfhqZ4ylaOXNqWXpTWmlaNzn6mmBpWjlgaVoJIDkqCX" onclick="return vote(2)" class="s2"></a><a title="1" href="vote?v=1;k=kSCRIU7Xkbd4fTctAIHVGAB%2FqjlzCVo5cxoJWvcuGTpwfhqZ4ylaOXNqWXpTWmlaNzn6mmBpWjlgaVoJIDkqCX" onclick="return vote(1)" class="s1"></a>
           </div>
         </div>
       </div>
@@ -716,7 +716,7 @@ ad_utils.queue_ad('3','top_rhs');
         <div class="outer">
           <div id="personal-voting-stars" class="inner" style="width: 0px"></div>
           <div class="starbar-votes">
-            <a title="10" href="vote?v=10;k=MgnTuUHDSALIt0yqnK1FGAB%2FqjlzCVo5cxoJWvcuGTpwfhqZ40laOXMqKRpTWmlaRzn6mmBpWjlgaVoJIDkqCX" onclick="return vote(10)" class="s10"></a><a title="9" href="vote?v=9;k=MgnTuUHDSALIt0yqnK1FGAB%2FqjlzCVo5cxoJWvcuGTpwfhqZ40laOXMqKRpTWmlaRzn6mmBpWjlgaVoJIDkqCX" onclick="return vote(9)" class="s9"></a><a title="8" href="vote?v=8;k=MgnTuUHDSALIt0yqnK1FGAB%2FqjlzCVo5cxoJWvcuGTpwfhqZ40laOXMqKRpTWmlaRzn6mmBpWjlgaVoJIDkqCX" onclick="return vote(8)" class="s8"></a><a title="7" href="vote?v=7;k=MgnTuUHDSALIt0yqnK1FGAB%2FqjlzCVo5cxoJWvcuGTpwfhqZ40laOXMqKRpTWmlaRzn6mmBpWjlgaVoJIDkqCX" onclick="return vote(7)" class="s7"></a><a title="6" href="vote?v=6;k=MgnTuUHDSALIt0yqnK1FGAB%2FqjlzCVo5cxoJWvcuGTpwfhqZ40laOXMqKRpTWmlaRzn6mmBpWjlgaVoJIDkqCX" onclick="return vote(6)" class="s6"></a><a title="5" href="vote?v=5;k=MgnTuUHDSALIt0yqnK1FGAB%2FqjlzCVo5cxoJWvcuGTpwfhqZ40laOXMqKRpTWmlaRzn6mmBpWjlgaVoJIDkqCX" onclick="return vote(5)" class="s5"></a><a title="4" href="vote?v=4;k=MgnTuUHDSALIt0yqnK1FGAB%2FqjlzCVo5cxoJWvcuGTpwfhqZ40laOXMqKRpTWmlaRzn6mmBpWjlgaVoJIDkqCX" onclick="return vote(4)" class="s4"></a><a title="3" href="vote?v=3;k=MgnTuUHDSALIt0yqnK1FGAB%2FqjlzCVo5cxoJWvcuGTpwfhqZ40laOXMqKRpTWmlaRzn6mmBpWjlgaVoJIDkqCX" onclick="return vote(3)" class="s3"></a><a title="2" href="vote?v=2;k=MgnTuUHDSALIt0yqnK1FGAB%2FqjlzCVo5cxoJWvcuGTpwfhqZ40laOXMqKRpTWmlaRzn6mmBpWjlgaVoJIDkqCX" onclick="return vote(2)" class="s2"></a><a title="1" href="vote?v=1;k=MgnTuUHDSALIt0yqnK1FGAB%2FqjlzCVo5cxoJWvcuGTpwfhqZ40laOXMqKRpTWmlaRzn6mmBpWjlgaVoJIDkqCX" onclick="return vote(1)" class="s1"></a>
+            <a title="10" href="vote?v=10;k=kSCRIU7Xkbd4fTctAIHVGAB%2FqjlzCVo5cxoJWvcuGTpwfhqZ4ylaOXNqWXpTWmlaNzn6mmBpWjlgaVoJIDkqCX" onclick="return vote(10)" class="s10"></a><a title="9" href="vote?v=9;k=kSCRIU7Xkbd4fTctAIHVGAB%2FqjlzCVo5cxoJWvcuGTpwfhqZ4ylaOXNqWXpTWmlaNzn6mmBpWjlgaVoJIDkqCX" onclick="return vote(9)" class="s9"></a><a title="8" href="vote?v=8;k=kSCRIU7Xkbd4fTctAIHVGAB%2FqjlzCVo5cxoJWvcuGTpwfhqZ4ylaOXNqWXpTWmlaNzn6mmBpWjlgaVoJIDkqCX" onclick="return vote(8)" class="s8"></a><a title="7" href="vote?v=7;k=kSCRIU7Xkbd4fTctAIHVGAB%2FqjlzCVo5cxoJWvcuGTpwfhqZ4ylaOXNqWXpTWmlaNzn6mmBpWjlgaVoJIDkqCX" onclick="return vote(7)" class="s7"></a><a title="6" href="vote?v=6;k=kSCRIU7Xkbd4fTctAIHVGAB%2FqjlzCVo5cxoJWvcuGTpwfhqZ4ylaOXNqWXpTWmlaNzn6mmBpWjlgaVoJIDkqCX" onclick="return vote(6)" class="s6"></a><a title="5" href="vote?v=5;k=kSCRIU7Xkbd4fTctAIHVGAB%2FqjlzCVo5cxoJWvcuGTpwfhqZ4ylaOXNqWXpTWmlaNzn6mmBpWjlgaVoJIDkqCX" onclick="return vote(5)" class="s5"></a><a title="4" href="vote?v=4;k=kSCRIU7Xkbd4fTctAIHVGAB%2FqjlzCVo5cxoJWvcuGTpwfhqZ4ylaOXNqWXpTWmlaNzn6mmBpWjlgaVoJIDkqCX" onclick="return vote(4)" class="s4"></a><a title="3" href="vote?v=3;k=kSCRIU7Xkbd4fTctAIHVGAB%2FqjlzCVo5cxoJWvcuGTpwfhqZ4ylaOXNqWXpTWmlaNzn6mmBpWjlgaVoJIDkqCX" onclick="return vote(3)" class="s3"></a><a title="2" href="vote?v=2;k=kSCRIU7Xkbd4fTctAIHVGAB%2FqjlzCVo5cxoJWvcuGTpwfhqZ4ylaOXNqWXpTWmlaNzn6mmBpWjlgaVoJIDkqCX" onclick="return vote(2)" class="s2"></a><a title="1" href="vote?v=1;k=kSCRIU7Xkbd4fTctAIHVGAB%2FqjlzCVo5cxoJWvcuGTpwfhqZ4ylaOXNqWXpTWmlaNzn6mmBpWjlgaVoJIDkqCX" onclick="return vote(1)" class="s1"></a>
           </div>
         </div>
       </div>
@@ -726,7 +726,7 @@ ad_utils.queue_ad('3','top_rhs');
         <div class="user">
           <div class="extra">
             <b><span id="voteuser"></span>/10</b>
-            &nbsp;&nbsp;(<a class="del" href="vote?v=X;k=MgnTuUHDSALIt0yqnK1FGAB%2FqjlzCVo5cxoJWvcuGTpwfhqZ40laOXMqKRpTWmlaRzn6mmBpWjlgaVoJIDkqCX" onclick="return vote('X')">delete</a>
+            &nbsp;&nbsp;(<a class="del" href="vote?v=X;k=kSCRIU7Xkbd4fTctAIHVGAB%2FqjlzCVo5cxoJWvcuGTpwfhqZ4ylaOXNqWXpTWmlaNzn6mmBpWjlgaVoJIDkqCX" onclick="return vote('X')">delete</a>
              | <a href="/list/ratings">history</a>)
           </div>
         </div>
@@ -868,7 +868,7 @@ Won 4 Oscars.
 <div class="info">
 <h5>User Reviews:</h5>
 <div class="info-content">
-A wonderfully modern romance
+Witty and Charming, one of Allen's greatest achievements.
 <a class="tn15more inline" href="#comment">See more (361 total)</a>&nbsp;&raquo;
 </div>
 </div>
@@ -886,7 +886,7 @@ A wonderfully modern romance
                             client:   "ca-amazon-imdb_js",    
                             title:    "Sponsored Links",    
                             help:     "What&#x27;s This?",    
-                            hints:    "freudian slip,christmas party,anhedonia,man with glasses,pygmalion"   
+                            hints:    "break up,hotel,existential crisis,urban setting,freudian slip"   
                           };     
      </script>   
          
@@ -940,20 +940,18 @@ function ynd(id, status) {
 //-->
 </script>
 <div class="small">
-83 out of 112 people found the following review useful.
+57 out of 77 people found the following review useful.
 </div>
 
-<b>A wonderfully modern romance</b>, 22 February 2000
+<b>Witty and Charming, one of Allen's greatest achievements.</b>, 14 May 2004
 <br>
 
+<div class="tinystarbar" title="10/10"><div style="width: 100px;"><a></a></div></div>
 
 <div class="small">
 Author:
-<a href="/user/ur0134444/comments">Mike Salvati</a>
+<a href="/user/ur1843220/comments">boycebrown-1</a>
 
-<small>
-from Blacksburg, VA
-</small>
 
 </div>
 
@@ -961,19 +959,25 @@ from Blacksburg, VA
 </p>
 <p>
 
-Woody Allen's masterpiece will always be &quot;Annie Hall.&quot;  What is most
-remarkable today about this film is the way Allen presents it.  It's a movie
-about a relationship.  But rather than taking a linear approach, Allen plays
-with time.  We see the middle, the begining, and the end. And not always in
-that order.  Allen also breaks the fourth wall a lot and has many dream
-sequences and asides which add to the complexity of the characters.  This is
-a highly autobiographical film and Allen pulls no punches.  This movie is
-not about romance in the way that &quot;Breakfast at Tiffany's&quot; is.  Rather,
-&quot;Annie Hall&quot; is a deconstruction of a romance.  At times it is funny and
-heartbreaking and always classic.  &quot;Love fades,&quot; indeed.
+Annie Hall is a movie about life.  In recent films, there are fairly
+predictable endings.  (i.e. guy gets girl after chase scene in Manhattan). 
+Annie Hall goes against the grain of movies.  There is definite chemistry
+between Allen and Keaton.  That is one of the main reasons this movie is
+successful.  Alvy and Annie do not have high wage jobs, they do not go
+clubbing, nor are they incredibly attractive.  Why does a movie character
+relationship have to be so extreme it's unconvincing?  These days movie
+producers create plots that are unbelievable.  They don't have any depth and
+usually have shallow intentions.  You can sense that the two leads care for
+each other.  The situations in this movie resemble real life and that is why
+it is so critically acclaimed and remembered. Sure Woody talked into the
+camera, but that, in a sense is real life as well.  It reminds me of my
+usual thought process and how when I think; I feel as though I'm presenting
+my thoughts to myself.  Only he is, presenting it to us.   This movie is
+clever and thought provoking.  If you're looking for the opposite of a
+yearly run of the mill movie, this is for you.  
 </p>
 
-<div class="yn" id="ynd_151656">
+<div class="yn" id="ynd_151789">
 <form method="get" action="/register/">
 <input type="hidden" name="why" value="comment_vote">
 Was the above review useful to you?
@@ -1134,7 +1138,7 @@ If you enjoyed this title, our database also recommends:
  </div>
 </div>
 
-<div id="servertime" time="211.813" treatment="control"></div>
+<div id="servertime" time="349.411" treatment="control"></div>
 
 <div id="criticalcontent" data-selector="#primary-poster, #title-media-strip img"></div>
 
@@ -1289,7 +1293,7 @@ ad_utils.queue_ad('1','bottom_ad');
 </script>
 <iframe src="/images/SF99c7f777fc74f1d954417f99b985a4af/a/ifb/doubleclick/expand.html#imdb2.consumer.title/combined;tile=1;sz=728x90,2x1;p=b;ct=com;id=tt0075686;g=co;tt=f;b=t250;g=brc;g=dr;b=31dom;g=ro;k=c;coo=usa;;[PASEGMENTS];u=[CLIENT_SIDE_ORD];ord=[CLIENT_SIDE_ORD]?" id="bottom_ad" name="bottom_ad" class="yesScript" width="728" height="90" data-config-width="728" data-config-height="90" data-cookie-width="null" data-cookie-height="null" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" allowtransparency="true" onload="ad_utils.on_ad_load(this)"></iframe>
 
-<noscript><a href="http://ad.doubleclick.net/jump/imdb2.consumer.title/combined;tile=1;sz=728x90,2x1;p=b;ct=com;id=tt0075686;g=co;tt=f;b=t250;g=brc;g=dr;b=31dom;g=ro;k=c;coo=usa;;ord=317280649281?" target="_blank"><img src="http://ad.doubleclick.net/ad/imdb2.consumer.title/combined;tile=1;sz=728x90,2x1;p=b;ct=com;id=tt0075686;g=co;tt=f;b=t250;g=brc;g=dr;b=31dom;g=ro;k=c;coo=usa;;ord=317280649281?"  border="0" alt="advertisement" /></a></noscript>
+<noscript><a href="http://ad.doubleclick.net/jump/imdb2.consumer.title/combined;tile=1;sz=728x90,2x1;p=b;ct=com;id=tt0075686;g=co;tt=f;b=t250;g=brc;g=dr;b=31dom;g=ro;k=c;coo=usa;;ord=82179677281?" target="_blank"><img src="http://ad.doubleclick.net/ad/imdb2.consumer.title/combined;tile=1;sz=728x90,2x1;p=b;ct=com;id=tt0075686;g=co;tt=f;b=t250;g=brc;g=dr;b=31dom;g=ro;k=c;coo=usa;;ord=82179677281?"  border="0" alt="advertisement" /></a></noscript>
 
 </div>
 <div id="bottom_ad_reflow_helper"></div>
@@ -1306,9 +1310,9 @@ ad_utils.queue_ad('1','bottom_ad');
 
 </layer>
 </div>
-<img src="/rd/?q=50703000000030a090f29616f226e276966600000010c6a08023031323035303630000001037a040379646370000001047&cb=133634722216222" width="1" height="1" alt="" border="0">
+<img src="/rd/?q=50703000000030a090f29616f226e276966600000010c6a08023031323035303730000001037a040379646370000001047&cb=133640042410926" width="1" height="1" alt="" border="0">
 </div> <!-- id="wrapper" -->
-<!-- h=iop538 i=2012-05-06 s=legacy(akas) t='Sun May  6 16:33:42 2012' -->
+<!-- h=iop734 i=2012-05-06 s=legacy(akas) t='Mon May  7 07:20:24 2012' -->
 <script src="http://i.media-imdb.com/images/SF7e0791f9fc3d5c7c1a0c2366fad57de6/js/jquery.js" ></script><script src="http://i.media-imdb.com/images/SF64feee625e9855437da0ae6185d643c5/js/cc/title/main.js" ></script><script src="http://i.media-imdb.com/images/SF4f789f206c87a31b26eb8666da48322e/js/app/win7/sitemode.js" ></script><script src="http://i.media-imdb.com/images/SF72867cac47f3d7e883837477537ab0a1/js/vote.js" ></script><script type="text/javascript">jQuery(function(){generic.document_is_ready()})</script><script type="text/javascript">generic.monitoring.stop_timing('page_load', '', true);generic.monitoring.all_events_started();</script><script src="http://i.media-imdb.com/images/SF86793c35a08946b1496c39d0dbd5b6c9/js/jquery/plugins/jquery.colorbox-min.js" ></script><link rel="stylesheet" type="text/css" href="http://i.media-imdb.com/images/SF73051487323537a6449a6bb75bc86d43/css/min/lightbox.css" ><script type="text/imdblogin-js" id="login">
     jQuery(document).ready(function(){
         window.imdb.login_lightbox("https://secure.imdb.com",

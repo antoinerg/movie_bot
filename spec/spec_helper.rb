@@ -1,5 +1,4 @@
 require 'movie_bot'
-require 'fakefs/spec_helpers'
 
 def read_fixture(path)
   File.read(File.expand_path(File.join(File.dirname(__FILE__), "fixtures/imdb", path)))
