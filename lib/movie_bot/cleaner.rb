@@ -3,12 +3,22 @@ require 'xbmc_library'
 module MovieBot
   class Cleaner
     attr_reader :movie
+    attr_accessor :imdb
+
+    Configuration.path = "#{ENV['HOME']}/.movie_bot"
+    CONFIG = Configuration.load 'movie_bot'
+
     def initialize(folder)
       @movie = MovieFolder.new(folder)
       #create_movie_nfo!
       #rename_folder!
     end
-    
+   
+    def imdb=(i)
+      raise ArgumentError unless i.is_a?(String)
+      @imdb = i
+    end
+
     # Return normalized name
     def name
       title = movie.imdb_info.title
@@ -26,7 +36,7 @@ module MovieBot
     def create_movie_nfo!
       if @movie.movie_nfo.nil?
         "No movie NFO in folder:"
-        imdb ||= @movie.imdb
+        @imdb ||= @movie.imdb
         url = "http://www.imdb.com/title/#{imdb}/"
         puts "Writing movie.nfo"
         File.open(File.join(@movie.path.to_s,'movie.nfo'), 'w') do |f|

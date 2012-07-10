@@ -3,6 +3,10 @@ extensions:
   - .mkv
   - .mp4
   - .avi
+  - .ISO
+  - .MKV
+  - .ts
+  - .m2ts
   
 cleaners:
   - EXTENDED

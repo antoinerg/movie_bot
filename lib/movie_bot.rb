@@ -2,6 +2,7 @@ require "pathname"
 require "fileutils"
 require "yaml"
 require "imdb"
+require "configuration"
 
 require "movie_bot/version"
 require "movie_bot/movie_folder"
