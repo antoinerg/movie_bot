@@ -10,6 +10,12 @@ module MovieBot
       @video_files = MovieBot::VideoFile.find_all(@path) # Raise error if emtpy
       @movie_files = @video_files - sample_files
     end
+
+    # Return size in human readable form
+    def size
+      l = `du -sh "#{@path.realpath}"`
+      return l.split("\t").first
+    end
     
     # Return the IMDB number by reading from nfo
     def imdb
