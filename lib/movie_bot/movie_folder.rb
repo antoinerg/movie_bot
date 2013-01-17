@@ -20,6 +20,7 @@ module MovieBot
     # Return the IMDB number by reading from nfo
     def imdb
       @imdb ||= imdb_from_nfo
+      raise ImdbIDNotFound if @imdb.nil?
       return @imdb
     end
     
