@@ -5,7 +5,8 @@ module MovieBot
   class CLI < Thor
     desc "clean", "Clean movie folder"
     def clean(path)
-      MovieBot::Cleaner.new(path)      
+      c=MovieBot::Cleaner.new(path)
+      c.clean!    
     end
     
     desc "scan", "Scan current folder"

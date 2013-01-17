@@ -14,6 +14,6 @@ describe MovieBot::MovieFolder do
   end
 
   it "should not return an imdb id" do
-    @movie.imdb.should eq(nil)
+    expect {@movie.imdb}.to raise_error MovieBot::ImdbIDNotFound
   end
 end

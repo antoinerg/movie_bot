@@ -10,6 +10,9 @@ module MovieBot
 
     def initialize(folder)
       @movie = MovieFolder.new(folder)
+    end
+
+    def clean!
       create_movie_nfo!
       rename_folder!
     end
