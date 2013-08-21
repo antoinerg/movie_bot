@@ -34,16 +34,20 @@ module MovieBot
       newpath = @movie.path.dirname + name
       @movie.path.rename(newpath)
       @movie = MovieFolder.new(newpath)
-    end  
+    end
     
     def create_movie_nfo!
       if @movie.movie_nfo.nil?
         "No movie NFO in folder:"
-        @imdb ||= @movie.imdb
-        url = "http://www.imdb.com/title/#{imdb}/"
-        puts "Writing movie.nfo"
-        File.open(File.join(@movie.path.to_s,'movie.nfo'), 'w') do |f|
-          f.write(url)
+        begin
+          @imdb ||= @movie.imdb
+          url = "http://www.imdb.com/title/#{imdb}/"
+          puts "Writing movie.nfo"
+          File.open(File.join(@movie.path.to_s,'movie.nfo'), 'w') do |f|
+            f.write(url)
+          end  
+        rescue ImdbIDNotFound
+          puts "Can't find IMDB ID"
         end
       else
         
