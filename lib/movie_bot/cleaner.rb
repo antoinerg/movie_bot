@@ -63,13 +63,15 @@ module MovieBot
     def create_movie_nfo!
       if @movie.movie_nfo.nil?
         "No movie NFO in folder:"
-        url = "http://www.imdb.com/title/#{self.imdb}/"
-        puts "Writing movie.nfo"
-        File.open(File.join(@movie.path.to_s,'movie.nfo'), 'w') do |f|
-          f.write(url)
+        if imdb
+          url = "http://www.imdb.com/title/#{self.imdb}/"
+          puts "Writing movie.nfo"
+          File.open(File.join(@movie.path.to_s,'movie.nfo'), 'w') do |f|
+            f.write(url)
+          end
+        else
+          return false
         end
-      else
-        
       end
       return true
     end
