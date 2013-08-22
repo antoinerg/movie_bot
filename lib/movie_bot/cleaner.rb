@@ -13,7 +13,7 @@ module MovieBot
     end
 
     def clean!
-      create_movie_nfo! && rename_folder!
+      create_movie_nfo! && rename_folder! && movie_folder!
     end
    
     def imdb=(i)
