@@ -24,6 +24,11 @@ module MovieBot
       return @imdb
     end
     
+    def imdb=(i)
+      raise ArgumentError unless i.is_a?(String)
+      @imdb = i
+    end
+    
     # Return pathname object for all nfo files in the root
     def nfos
       nfos = glob('*.nfo')

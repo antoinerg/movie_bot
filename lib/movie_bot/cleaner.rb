@@ -2,11 +2,13 @@
 
 module MovieBot
   class Cleaner
+    TITLE_CLEANERS = YAML.load(File.read(File.join(File.dirname(__FILE__),"strings.yaml")))["cleaners"]
+    
     attr_reader :movie
     attr_accessor :imdb
 
-    Configuration.path = "#{ENV['HOME']}/.movie_bot"
-    CONFIG = Configuration.load 'movie_bot'
+    #Configuration.path = "#{ENV['HOME']}/.movie_bot"
+    #CONFIG = Configuration.load 'movie_bot'
 
     def initialize(folder)
       @movie = MovieFolder.new(folder)
@@ -16,11 +18,6 @@ module MovieBot
       create_movie_nfo! && rename_folder! && move_folder!
     end
    
-    def imdb=(i)
-      raise ArgumentError unless i.is_a?(String)
-      @imdb = i
-    end
-
     # Return normalized name
     def name
       title = movie.imdb_info.title
@@ -51,11 +48,16 @@ module MovieBot
     
     def imdb
       begin
-        @imdb ||= @movie.imdb
-        return @imdb
+        return @movie.imdb
       rescue ImdbIDNotFound
         puts "Can't find IMDB ID"
-        return nil
+        title = @movie.path.basename.to_s
+        
+        TITLE_CLEANERS.each do |t|
+          title.gsub!(t,'')
+        end
+        
+        return self.search_imdb(title)
         # Should interactively query IMDB here
       end
     end
@@ -74,6 +76,26 @@ module MovieBot
         end
       end
       return true
+    end
+  
+    def search_imdb(title)
+      puts "Searching IMDB for: #{title}"
+      
+      i = Imdb::Search.new(title)
+      i.movies[0..9].each_with_index do |m,i|
+        puts "#{i+1} : #{m.title}"
+      end
+    
+      puts "Select movie"
+      input = $stdin.gets
+      id = input.to_i
+      
+      if id == 0
+        return search_imdb(input)
+      else
+        @movie.imdb = "tt#{i.movies[id-1].id}"
+        return @movie.imdb
+      end
     end
   end
 end
