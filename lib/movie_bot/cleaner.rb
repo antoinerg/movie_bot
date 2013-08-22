@@ -1,4 +1,4 @@
-require 'xbmc_library'
+#require 'xbmc_library'
 
 module MovieBot
   class Cleaner
@@ -30,10 +30,14 @@ module MovieBot
     end
     
     def rename_folder!
-      puts "Renaming folder '#{@movie.path.basename.to_s}' to '#{name}'"
-      newpath = @movie.path.dirname + name
-      @movie.path.rename(newpath)
-      @movie = MovieFolder.new(newpath)
+      if @imdb
+        puts "Renaming folder '#{@movie.path.basename.to_s}' to '#{name}'"
+        newpath = @movie.path.dirname + name
+        @movie.path.rename(newpath)
+        @movie = MovieFolder.new(newpath)
+      else
+        puts "Can't rename based on an IMDB lookup"
+      end
     end
     
     def create_movie_nfo!
@@ -41,14 +45,17 @@ module MovieBot
         "No movie NFO in folder:"
         begin
           @imdb ||= @movie.imdb
-          url = "http://www.imdb.com/title/#{imdb}/"
-          puts "Writing movie.nfo"
-          File.open(File.join(@movie.path.to_s,'movie.nfo'), 'w') do |f|
-            f.write(url)
-          end  
         rescue ImdbIDNotFound
           puts "Can't find IMDB ID"
+          return
+          # Should interactively query IMDB here
         end
+        
+        url = "http://www.imdb.com/title/#{imdb}/"
+        puts "Writing movie.nfo"
+        File.open(File.join(@movie.path.to_s,'movie.nfo'), 'w') do |f|
+          f.write(url)
+        end  
       else
         
       end
