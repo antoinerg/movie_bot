@@ -7,3 +7,5 @@ TODO
 ----
 
 - Write a usage section
+- Convert VIDEO_TS into iso image
+- Interactively look for the IMDB id of a movie
