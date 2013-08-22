@@ -44,4 +44,9 @@ describe MovieBot::Cleaner do
     @cleaner.move_folder!
     File.directory?(File.join(final_destination,'clean')).should be_true
   end
+  
+  it "should clean release information" do
+    t=MovieBot::Cleaner.title_clean("Rounders 1998 BluRay 1080p Dual x264 erz")
+    t.should eq ("Rounders (1998)")
+  end
 end

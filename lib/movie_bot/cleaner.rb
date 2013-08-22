@@ -53,11 +53,7 @@ module MovieBot
         puts "Can't find IMDB ID"
         title = @movie.path.basename.to_s
         
-        TITLE_CLEANERS.each do |t|
-          title.gsub!(t,'')
-        end
-        
-        return self.search_imdb(title)
+        return self.search_imdb(self.class.title_clean(title))
         # Should interactively query IMDB here
       end
     end
@@ -96,6 +92,17 @@ module MovieBot
         @movie.imdb = "tt#{i.movies[id-1].id}"
         return @movie.imdb
       end
+    end
+    
+    def self.title_clean(title)
+      TITLE_CLEANERS.each do |t|
+        title.gsub!(/#{t}/i,'')
+      end
+      
+      title.gsub!(/\s{2,}/,'')
+      
+      m=title.match(/(.*) \(?(\d{4})\)?.*/)
+      return "#{m[1]} (#{m[2]})"
     end
   end
 end
