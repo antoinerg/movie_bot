@@ -5,7 +5,7 @@ module MovieBot
     # Initialize object and check whether the folder exist?
     def initialize(path)
       raise ArgumentError, 'Folder does not exists' unless Dir.exists?(path)
-      @path = Pathname.new(path)
+      @path = Pathname.new(path).realpath
       
       @video_files = MovieBot::VideoFile.find_all(@path) # Raise error if emtpy
       @movie_files = @video_files - sample_files

@@ -26,5 +26,5 @@ Gem::Specification.new do |s|
   s.add_dependency "imdb"
   s.add_dependency "thor"
   s.add_dependency "mediainfo"
-  s.add_dependency "xbmc_library"
+  #s.add_dependency "xbmc_library"
 end

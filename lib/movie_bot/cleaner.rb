@@ -13,8 +13,7 @@ module MovieBot
     end
 
     def clean!
-      create_movie_nfo!
-      rename_folder!
+      create_movie_nfo! && rename_folder!
     end
    
     def imdb=(i)
@@ -29,14 +28,24 @@ module MovieBot
       "#{title} (#{year})"
     end
     
+    def move_folder!
+      if dst = ENV['DEST_DIR']
+        FileUtils.mv(@movie.path,dst)
+      else
+        puts "Set DEST_DIR to move file"
+      end
+    end
+    
     def rename_folder!
       if @imdb
         puts "Renaming folder '#{@movie.path.basename.to_s}' to '#{name}'"
         newpath = @movie.path.dirname + name
         @movie.path.rename(newpath)
         @movie = MovieFolder.new(newpath)
+        return true
       else
         puts "Can't rename based on an IMDB lookup"
+        return false
       end
     end
     
@@ -55,10 +64,11 @@ module MovieBot
         puts "Writing movie.nfo"
         File.open(File.join(@movie.path.to_s,'movie.nfo'), 'w') do |f|
           f.write(url)
-        end  
+        end
       else
         
       end
+      return true
     end
   end
 end
