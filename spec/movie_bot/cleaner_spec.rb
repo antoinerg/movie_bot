@@ -1,10 +1,12 @@
 require 'spec_helper'
 path = "spec/fixtures/movies/clean"
 destination = '/tmp/movie_bot'
+final_destination = destination + '/final'
 
 describe MovieBot::Cleaner do
   before(:each) do
     FileUtils.mkdir_p destination
+    FileUtils.mkdir_p final_destination
     FileUtils.cp_r path, destination
     @cleaner = MovieBot::Cleaner.new(File.join(destination,'clean'))
   end
@@ -35,5 +37,11 @@ describe MovieBot::Cleaner do
     @cleaner.imdb = imdb
     @cleaner.create_movie_nfo!
     Pathname(File.join(destination,'clean','movie.nfo')).read.should eq("http://www.imdb.com/title/#{imdb}/\n")
+  end
+  
+  it "should move folder to final destination" do
+    ENV['DEST_DIR'] = final_destination
+    @cleaner.move_folder!
+    File.directory?(File.join(final_destination,'clean')).should be_true
   end
 end

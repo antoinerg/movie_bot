@@ -13,7 +13,7 @@ module MovieBot
     end
 
     def clean!
-      create_movie_nfo! && rename_folder! && movie_folder!
+      create_movie_nfo! && rename_folder! && move_folder!
     end
    
     def imdb=(i)
@@ -37,7 +37,7 @@ module MovieBot
     end
     
     def rename_folder!
-      if @imdb
+      if imdb
         puts "Renaming folder '#{@movie.path.basename.to_s}' to '#{name}'"
         newpath = @movie.path.dirname + name
         @movie.path.rename(newpath)
@@ -49,18 +49,21 @@ module MovieBot
       end
     end
     
+    def imdb
+      begin
+        @imdb ||= @movie.imdb
+        return @imdb
+      rescue ImdbIDNotFound
+        puts "Can't find IMDB ID"
+        return nil
+        # Should interactively query IMDB here
+      end
+    end
+  
     def create_movie_nfo!
       if @movie.movie_nfo.nil?
         "No movie NFO in folder:"
-        begin
-          @imdb ||= @movie.imdb
-        rescue ImdbIDNotFound
-          puts "Can't find IMDB ID"
-          return
-          # Should interactively query IMDB here
-        end
-        
-        url = "http://www.imdb.com/title/#{imdb}/"
+        url = "http://www.imdb.com/title/#{self.imdb}/"
         puts "Writing movie.nfo"
         File.open(File.join(@movie.path.to_s,'movie.nfo'), 'w') do |f|
           f.write(url)
