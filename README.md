@@ -1,4 +1,5 @@
-# movie_bot
+# movie_bot 
+[![Build Status](https://travis-ci.org/antoinerg/movie_bot.png?branch=master)](https://travis-ci.org/antoinerg/movie_bot)
 
 I made this library to rename and clean up a bunch of folders containing movies. It is very opiniated for now.
 
