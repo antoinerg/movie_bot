@@ -71,7 +71,9 @@ module MovieBot
     # Read file at given path and deals with encoding
     def readnfo(path)
       begin
-        path.read.encode!('UTF-8','UTF-8',:invalid => :replace)
+        # Initially I had errors on FreeBSD 9 with ruby 1.9.3 dealing with invalid bytes.
+        # http://stackoverflow.com/questions/10466161/ruby-string-encode-still-gives-invalid-byte-sequence-in-utf-8
+        path.read.encode!('UTF-8','binary',:invalid => :replace,:undef => :replace,:replace=>"")
       rescue Exception => e
         puts e.message
       end
